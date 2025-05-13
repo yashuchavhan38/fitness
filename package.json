@@ -10,6 +10,6 @@
     "mochawesome": "^6.0.0"
   },
   "dependencies": {
-    "express": "^4.17.1"  // or any other packages you need
+    "express": "^4.17.1"  
   }
 }

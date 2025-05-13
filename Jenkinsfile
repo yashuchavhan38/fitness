@@ -1,3 +1,5 @@
+
+
 pipeline {
     agent any
 
@@ -28,7 +30,7 @@ pipeline {
 
         stage('Deploy') {
             steps {
-                echo 'Deploy stage goes here...'
+                echo 'Deploying application...'
             }
         }
     }

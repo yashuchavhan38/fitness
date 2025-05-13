@@ -1,5 +1,4 @@
 
-
 pipeline {
     agent any
 
@@ -10,7 +9,7 @@ pipeline {
             }
         }
 
-        stage('Install') {
+        stage('Install Dependencies') {
             steps {
                 bat 'npm install'
             }
@@ -30,13 +29,13 @@ pipeline {
 
         stage('Archive Report') {
             steps {
-                archiveArtifacts artifacts: 'mochawesome-report/mochawesome.html', allowEmptyArchive: true
+                archiveArtifacts artifacts: 'mochawesome-report/*.html', allowEmptyArchive: true
             }
         }
 
         stage('Deploy') {
             steps {
-                echo 'Deploying application...'
+                echo 'Deploy step here'
             }
         }
     }

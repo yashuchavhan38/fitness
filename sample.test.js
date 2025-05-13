@@ -1,7 +1,8 @@
+// sample.test.js
 const assert = require('assert');
 
-describe('Fitness App', () => {
-  it('should pass this sample test', () => {
+describe('Sample Test', () => {
+  it('should pass', () => {
     assert.strictEqual(2 + 2, 4);
   });
 });

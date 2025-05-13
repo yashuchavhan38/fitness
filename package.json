@@ -1,16 +1,15 @@
 {
   "name": "fitness",
   "version": "1.0.0",
-  "description": "Fitness CI/CD Pipeline Project",
-  "main": "index.js",
   "scripts": {
-    "test": "mocha *.test.js --reporter mochawesome",
-    "build": "echo \"Building project...\""
+    "build": "echo 'Building project...'",
+    "test": "mocha *.test.js --reporter mochawesome"
   },
-  "author": "yashuchavhan38",
-  "license": "ISC",
   "devDependencies": {
     "mocha": "^10.0.0",
-    "mochawesome": "^7.1.3"
+    "mochawesome": "^6.0.0"
+  },
+  "dependencies": {
+    "express": "^4.17.1"  // or any other packages you need
   }
 }

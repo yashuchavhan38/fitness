@@ -28,6 +28,12 @@ pipeline {
             }
         }
 
+        stage('Archive Report') {
+            steps {
+                archiveArtifacts artifacts: 'mochawesome-report/mochawesome.html', allowEmptyArchive: true
+            }
+        }
+
         stage('Deploy') {
             steps {
                 echo 'Deploying application...'
